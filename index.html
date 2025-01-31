@@ -7,7 +7,59 @@
   <link href="src/output.css" rel="stylesheet">
 </head>
 <body>
-    <h1 class=""></h1>
-    
+    <header>
+      <nav class="lg:w-9/10 m-auto w-full">
+        <div class="navbar bg-base-100 shadow-sm lg:shadow-none justify-between">
+          <div class="navbar-start">
+            <a>
+              <img class="hidden lg:block" src="assets/logo-header.png">
+              <img class="lg:hidden" src="assets/logo-header-mobile.png">
+            </a>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1 text-xl">
+              <li><a class="hover:bg-green-502 hover:text-white rounded-lg">Product</a></li>
+              <li><a class="hover:bg-green-502 hover:text-white rounded-lg">Services</a></li>
+              <li><a class="hover:bg-green-502 hover:text-white rounded-lg">Contact us</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end lg:flex hidden">
+            <button class="btn btn-circle btn-ghost">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-7">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+              </svg>              
+            </button>
+            <button class="btn btn-ghost btn-circle">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+              </svg>
+              
+            </button>
+            <button class="btn text-xl ml-3 px-8 py-3 h-auto rounded-lg bg-inherit border-green-502">Login</button>
+            <button class="btn text-xl ml-3 px-8 py-3 h-auto rounded-lg text-white bg-green-502">Register</button>
+          </div>
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+              </svg>              
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow relative right-0">
+              <li>
+                <a>Item 1</a>
+              </li>
+              <li>
+                <a>Parent</a>
+              </li>
+              <li>
+                <a>Item 3</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
 </body>
 </html>

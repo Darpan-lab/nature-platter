@@ -1,1 +1,7 @@
 @import "tailwindcss";
+@plugin "daisyui";
+
+@theme {
+    --color-green-501: #88c057;
+    --color-green-502: rgb(23, 152, 0);
+}
