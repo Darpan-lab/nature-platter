@@ -28,4 +28,19 @@
     .my-card-description{
         @apply font-light text-base lg:text-xl opacity-80;
     }
+    .my-section-title{
+        @apply text-green-502 font-semibold text-2xl lg:text-[2.25rem] mb-8 lg:mb-12;
+    }
+    .grid-products{
+        @apply flex flex-row gap-4 rounded-xl p-4 bg-white box-border;
+    }
+    .grid-products > img{
+        @apply w-full;
+    }
+    .grid-products-money{
+        @apply text-[0.6rem] lg:text-base font-medium;
+    }
+    .grid-products-img{
+        @apply lg:w-[86px] lg:h-[86px] w-[53px] h-[53px] bg-[#efebe3] rounded-xl flex justify-center items-center box-border;
+    }
 }
