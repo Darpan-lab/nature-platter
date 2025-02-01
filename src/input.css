@@ -2,6 +2,30 @@
 @plugin "daisyui";
 
 @theme {
-    --color-green-501: #88c057;
+    --color-black-501: rgb(239, 235, 227);
     --color-green-502: rgb(23, 152, 0);
+
+}
+@layer components {
+    .content-x-center-auto{
+        @apply w-9/10 mx-auto;
+    }
+    .content-x-lg-center-auto{
+        @apply lg:w-9/10 lg:mx-auto;
+    }
+    .my-flex{
+        @apply flex justify-center items-center flex-col;
+    }
+    .my-card{
+        @apply bg-black-501 rounded-2xl h-[367px] box-border px-8;
+    }
+    .my-card-logo{
+        @apply bg-white rounded-full p-6;
+    }
+    .my-card-title{
+        @apply mt-6 mb-3 font-semibold text-xl lg:text-2xl;
+    }
+    .my-card-description{
+        @apply font-light text-base lg:text-xl opacity-80;
+    }
 }
