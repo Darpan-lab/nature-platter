@@ -4,6 +4,8 @@
 @theme {
     --color-black-501: rgb(239, 235, 227);
     --color-green-502: rgb(23, 152, 0);
+    --font-sora: "Sora", serif;
+    --font-poppins: "Poppins", serif;
 
 }
 @layer components {
@@ -32,7 +34,7 @@
         @apply text-green-502 font-semibold text-2xl lg:text-[2.25rem] mb-8 lg:mb-12;
     }
     .grid-products{
-        @apply flex flex-row gap-4 rounded-xl p-4 bg-white box-border;
+        @apply flex items-center flex-row gap-[10px] lg:gap-4 rounded-xl p-2 lg:p-3 bg-white box-border;
     }
     .grid-products > img{
         @apply w-full;
@@ -42,5 +44,14 @@
     }
     .grid-products-img{
         @apply lg:w-[86px] lg:h-[86px] w-[53px] h-[53px] bg-[#efebe3] rounded-xl flex justify-center items-center box-border;
+    }
+    @keyframes bounch {
+        0%{
+            transform: scale(1);
+
+        }
+        100%{
+            transform: scale(1.3);
+        }
     }
 }
