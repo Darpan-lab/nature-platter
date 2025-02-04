@@ -9328,6 +9328,21 @@
       height: calc(var(--spacing) * 6);
     }
   }
+  .lg\:w-\[60\%\] {
+    @media (width >= 64rem) {
+      width: 60%;
+    }
+  }
+  .lg\:w-\[60\] {
+    @media (width >= 64rem) {
+      width: 60;
+    }
+  }
+  .lg\:w-\[65\%\] {
+    @media (width >= 64rem) {
+      width: 65%;
+    }
+  }
   .lg\:w-\[160px\] {
     @media (width >= 64rem) {
       width: 160px;
